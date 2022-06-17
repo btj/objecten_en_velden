@@ -25,5 +25,10 @@ public class IntWaarde extends Waarde {
 	public boolean equals(Object obj) {
 		return obj instanceof IntWaarde w ? waarde == w.waarde : false;
 	}
+	
+	@Override
+	public int hashCode() {
+		return waarde;
+	}
 
 }
