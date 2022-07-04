@@ -1,6 +1,7 @@
-package objecten_en_velden;
+package objecten_en_velden.tests;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -10,6 +11,10 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
+
+import objecten_en_velden.IntWaarde;
+import objecten_en_velden.JavaObject;
+import objecten_en_velden.Veld;
 
 class ObjectenEnVeldenTest {
 
