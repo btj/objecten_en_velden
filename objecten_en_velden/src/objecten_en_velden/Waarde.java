@@ -5,7 +5,8 @@ public abstract class Waarde {
 	// Gedragssubtypering
 	
 	/**
-	 * @post | obj instanceof Waarde || result == false
+	 * @post If `obj` is not a Waarde object, the result equals `false`.
+	 *     | obj instanceof Waarde || result == false
 	 */
 	@Override
 	public abstract boolean equals(Object obj);

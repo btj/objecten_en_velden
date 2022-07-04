@@ -20,6 +20,8 @@ class ObjectenEnVeldenTest {
 		assertEquals(Set.of(), p.getVerwijzendeVelden());
 		
 		IntWaarde w10 = new IntWaarde(10);
+		assertEquals(10, w10.getWaarde());
+		
 		Veld p_x = new Veld(p, "x", w10);
 		assertEquals(p, p_x.getObject());
 		assertEquals("x", p_x.getNaam());

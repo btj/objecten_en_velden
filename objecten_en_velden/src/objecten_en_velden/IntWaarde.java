@@ -5,7 +5,7 @@ package objecten_en_velden;
  */
 public class IntWaarde extends Waarde {
 	
-	private final int waarde;
+	private int waarde;
 	
 	public int getWaarde() {
 		return waarde;
@@ -19,11 +19,11 @@ public class IntWaarde extends Waarde {
 	}
 	
 	/**
-	 * @post | result == (obj instanceof IntWaarde w ? getWaarde() == w.getWaarde() : false)
+	 * @post | result == (obj instanceof IntWaarde w && getWaarde() == w.getWaarde())
 	 */
 	@Override
 	public boolean equals(Object obj) {
-		return obj instanceof IntWaarde w ? waarde == w.waarde : false;
+		return obj instanceof IntWaarde w && waarde == w.waarde;
 	}
 	
 	@Override

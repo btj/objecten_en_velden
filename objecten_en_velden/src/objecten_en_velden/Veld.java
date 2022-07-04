@@ -1,6 +1,5 @@
 package objecten_en_velden;
 
-import java.util.List;
 import java.util.Set;
 import logicalcollections.LogicalMap;
 import logicalcollections.LogicalSet;
@@ -53,7 +52,6 @@ public class Veld {
 	 *
 	 * @mutates_properties | object.getVelden()
 	 * @mutates_properties | (...(waarde instanceof JavaObject o ? Set.<JavaObject>of(o) : Set.<JavaObject>of())).getVerwijzendeVelden()
-	 * @mutates_properties | (waarde instanceof JavaObject o ? o : null).getVerwijzendeVelden()
 	 * 
 	 * @post | getObject() == object
 	 * @post | getNaam() == naam
@@ -87,8 +85,8 @@ public class Veld {
 	/**
 	 * @pre | waarde != null
 	 * 
-	 * @mutates_properties | (...(getWaarde() instanceof JavaObject o ? List.<JavaObject>of(o) : List.<JavaObject>of())).getVerwijzendeVelden()
-	 * @mutates_properties | (...(waarde instanceof JavaObject o ? List.<JavaObject>of(o) : List.<JavaObject>of())).getVerwijzendeVelden()
+	 * @mutates_properties | (...(getWaarde() instanceof JavaObject o ? Set.<JavaObject>of(o) : Set.<JavaObject>of())).getVerwijzendeVelden()
+	 * @mutates_properties | (...(waarde instanceof JavaObject o ? Set.<JavaObject>of(o) : Set.<JavaObject>of())).getVerwijzendeVelden()
 	 * 
 	 * @post | getWaarde() == waarde
 	 * @post | waarde == old(getWaarde()) ?
